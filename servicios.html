@@ -11,6 +11,94 @@
     <title>Inicio</title>
 </head>
 <body>
+
+    <!--Comienzo del header-->
+    <header class="header">
+
+        <!--Logo de la página junto al nombre. Tambien contiene el icono del menu hamburguesa-->
+        <div class="header-top">
+            <img src="/imagenesyiconos/PowerArg-sinfondo.png" class="logoimg" alt="Logo">
+            <p class="logo_text">powerarg</p>
+            <button class="header-btn" title="header-button">
+                <i class="fa-solid fa-bars menuhamburguesa"></i>
+            </button>
+        </div>
+        <!--FIN-->
+            
+        <!--Menu para navegar entre las secciones de la página-->
+        <nav class="header-menu">
+            <ul>
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="servicios.html">servicios</a></li>
+                <li><a href="productos.html">productos</a></li>
+                <li><a href="clientes.html">clientes</a></li>
+                <li><a href="#contactanos">contactos</a></li>
+            </ul>
+        </nav>
+        <!--FIN-->
+
+        <!--Segunda parte del menu que contiene registro, inicio de sesion y el carrito-->
+        <div class="header-menu-dos">
+            <a href="signup.html" title="signup"><i class="fa-solid fa-user-plus"></i></a>
+            <a href="login.html" title="login"><i class="fa-solid fa-right-to-bracket"></i></a>
+            <a href="carrito.html" title="shop"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <!--FIN-->
+
+    </header>
+    <!--FIN DEL HEADER-->
+
+
     
+
+
+
+    <!--CONTACTOS-->
+    <footer id="contactanos">
+        
+        <div class="linkscontainer">
+            <div class="titulodelinks">
+                <p class="encontranos">Encontranos en:</p>
+            </div>
+            
+            <div class="links">
+                <ul class="linksicons">
+                    <li><a href="https://facebook.com" ><img src="./imagenesyiconos/fbico.png" alt="fb" class="linkimg"></a></li>
+                    <li><a href="https://instagram.com"><img src="./imagenesyiconos/InstagramIcono.ico" alt="ig" class="linkimg"></a></li>
+                    <li><a href="https://twitter.com" ><img src="./imagenesyiconos/TwitterIcono.ico" alt="tw" class="linkimg"></a></li>
+                </ul>
+                <ul class="textlinks">
+                    <li><a href="https://facebook.com" >Facebook</a></li>
+                    <li><a href="https://instagram.com">Instagram</a></li>
+                    <li><a href="https://twitter.com" >Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="logo-bajo"> 
+            <a href="index.html"><img src="./imagenesyiconos/PowerArg-sinfondo.png" alt="logo"></a>
+        </div>
+
+        <div class="relleno">Copyriht©2022 All rights reserved</div>
+
+    </footer> 
+    <!--Fin del footer-->
+
+
+    <!--SCRIPT PARA EL MENU HAMBURGUESA-->
+<script>
+    const header_btn = document.querySelector(".header-btn")
+    const header_menu = document.querySelector(".header-menu")
+    const header_menu_dos = document.querySelector(".header-menu-dos")
+    header_btn.addEventListener("click", () => {
+        if (header_menu.style.display != "block"){
+            header_menu.style.display = "block"
+            header_menu_dos.style.display = "flex"
+        } else{
+            header_menu.style.display = "none"
+            header_menu_dos.style.display = "none"
+        }
+    })
+</script>
 </body>
 </html>
