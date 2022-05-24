@@ -1,0 +1,94 @@
+@import '../utilities/variables';
+@import '../utilities/mixins';
+@import '../base/reset';
+
+.header{
+    background-color: $bg-color-header-footer;
+    padding: 10px;
+    color: $text-w;
+
+    .header-top{
+        @include df-jc-sb-ai-c;
+
+            .logoimg{
+                width: 100px;
+            }
+
+            .logo_text{
+                @include g-text-shadow;
+            }
+
+            .header-btn{
+                background-color: $bg-color-header-footer;
+                border: none;
+                font-size: x-large;
+                height: 30px;
+
+                .header-btn i{
+                    cursor: pointer;
+                    @include g-text-shadow;
+                }
+                @media screen and (min-width: 768px){
+                    display: none;
+                }
+            }
+    }
+
+    .header-menu{
+        display: none;
+        padding-top: 10px;
+
+        .header-menu ul{
+            @include reset-all;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            
+            .header-menu ul li a{
+                text-decoration: none;
+                color: $text-w;
+                @include g-text-shadow;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+                a &hover{
+                    color: #0bff01;
+                    text-decoration: underline;
+                    transition: all 1.5s;
+                }
+
+            }
+            @media screen and (min-width: 768px){
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+            }
+        }
+        @media screen and (min-width: 768px){
+            display: block;
+        }
+    }
+
+    .header-menu-dos{
+        padding: 20px 0px 10px 0px;
+        display: none;
+        justify-content: space-around;
+        font-size: large;
+
+        .header-menu-dos a i{
+            @include g-text-shadow;
+        }
+        @media screen and (min-width: 768px) {
+            width: 150px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        @include df-jc-sb-ai-c
+    }
+
+}
+
+

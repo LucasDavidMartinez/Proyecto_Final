@@ -1,0 +1,31 @@
+@mixin reset-pm {
+    padding: 0;
+    margin: 0;
+}
+
+@mixin reset-ul {
+    list-style-type: none;
+}
+
+@mixin reset-tdeco {
+    text-decoration: none;
+}
+
+@mixin df-jc-c-ai-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin df-jc-sb-ai-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin g-text-shadow {
+    color: #0bff01;
+    text-shadow:
+    0 0 7px #0bff01,
+    0 0 10px #0bff01;
+}

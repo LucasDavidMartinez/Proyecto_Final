@@ -1,0 +1,23 @@
+@import '../utilities/mixins';
+
+@mixin reset-all {
+    @include reset-pm;
+    @include reset-tdeco;
+    @include reset-ul;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
